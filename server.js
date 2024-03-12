@@ -18,7 +18,7 @@ app.use(express.json());
 
 
 // Conectar ao MongoDB
-const uri = "mongodb+srv://1@sfc.ems7t7s.mongodb.net/?retryWrites=true&w=majority";
+const uri = "mongodb+srv://test:USF2024Sfc@test.q4vnkax.mongodb.net/?retryWrites=true&w=majority&appName=test";
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
