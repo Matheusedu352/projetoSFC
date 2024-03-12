@@ -84,7 +84,7 @@ function updateChart(newData, graph, dadosArr) {
 }
 
 function fetchDataDataBase() {
-  fetch('https://sfc-project-usf.netlify.app//dados')
+  fetch('https://sfc-project-usf.netlify.app/dados')
     .then(response => response.json())
     .then(data => {
       console.log(data);
@@ -115,7 +115,7 @@ function fetchDataDataBase() {
           setPointTemperatura: setPointTempInput.value
         };
 
-        fetch(`https://sfc-project-usf.netlify.app//atualizar-set`, {
+        fetch(`https://sfc-project-usf.netlify.app/atualizar-set`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
